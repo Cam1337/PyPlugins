@@ -7,4 +7,4 @@ if __name__ == "__main__":
     plug_dir = os.path.join(proj_dir, "plugins")
     manager =  PluginManager(projectdir=proj_dir, plugindir=plug_dir, debug=True)
     manager.load_all()
-    print manager.get("example","constants").host
+    print "example.constants.host = ", manager.get("example","constants").host
